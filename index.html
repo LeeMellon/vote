@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link href="css/styles.css" rel="stylesheet" type="text/css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="js/scripts.js"></script>
     <meta charset="utf-8">
     <title>Vote Project</title>
   </head>
@@ -9,22 +13,32 @@
       <!-- USER IS OF VOTING AGE -->
       <div id="top">
         <h1>VOTING INFORMATION SITE</h1>
+        <p>Welcome to the 'how to vote' information page.</p>
+        <p>Here you will find resources and general information about elections and voting.</p>
+        <p>PLACEHOLDER Please tell us how old you are</p>
+        <form id="ageForm">
+        <div class="form-group">
+          <label for="age">Your age:</label>
+          <input id="age" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn">ENTER</button>
+      </form>
       </div>
-      <div class="well">
+      <div class="well" id="oldEnough">
         <h2>VOTING INFORMATION</h2>
-        <!--
+        <p>
         Those old enough to vote should be offered links to
          websites to register to vote, locate their nearest polling location/ballot dropbox is, or list when upcoming elections will take place.
-        -->
+       </p>
       </div>
-      <div class="well">
+      <div class="well" id="tooYoung">
       <!-- USER IS NOT OF VOTING AGE -->
       <h2>VOTING INFORMATION</h2>
-        <!--
-        If the user is too young to vote, they should see different information than if the user is old enough to legally vote.
 
-        If the user is too young to vote, they should see different information than if the user is old enough to legally vote.
-        -->
+      <p>  If the user is too young to vote, they should see different information than if the user is old enough to legally vote.</p>
+
+      <p>  If the user is too young to vote, they should see different information than if the user is old enough to legally vote.
+      </p>
       </div>
     </div>
   </body>
